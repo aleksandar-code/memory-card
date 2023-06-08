@@ -9,9 +9,9 @@ export function Header({ bestScore, currentScore }) {
             once!
           </p>
           <div>
-            <div>Current Score: {currentScore}</div>
+            <div className="current-score">Current Score: {currentScore}</div>
 
-            <div>Best Score: {bestScore}</div>
+            <div className="best-score">Best Score: {bestScore}</div>
           </div>
         </div>
       </header>

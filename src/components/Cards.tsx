@@ -6,6 +6,7 @@ export function Cards({
   setBestScore,
   setCurrentScore,
   currentScore,
+  createCards,
 }) {
   const shuffle = (...array: object[]) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -17,7 +18,7 @@ export function Cards({
 
   return (
     <>
-      <div className="cards">
+      <div id="cards">
         {cards.map((card: { id: number; name: string; clicked: boolean }) => {
           return (
             <Card
@@ -29,6 +30,7 @@ export function Cards({
               setBestScore={setBestScore}
               currentScore={currentScore}
               setCurrentScore={setCurrentScore}
+              createCards={createCards}
             ></Card>
           );
         })}

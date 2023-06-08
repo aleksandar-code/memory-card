@@ -20,6 +20,7 @@ export function Game({ currentScore, setCurrentScore, setBestScore }) {
         setBestScore={setBestScore}
         currentScore={currentScore}
         setCurrentScore={setCurrentScore}
+        createCards={createCards}
       ></Cards>
     </>
   );

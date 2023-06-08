@@ -6,6 +6,7 @@ export function Card({
   setBestScore,
   setCurrentScore,
   currentScore,
+  createCards,
 }) {
   return (
     <>
@@ -16,9 +17,9 @@ export function Card({
             setCards(shuffle(...cards), (card.clicked = true));
             setCurrentScore((currentScore += 1));
           } else {
-            console.log(card.clicked);
             setBestScore(currentScore);
             setCurrentScore(0);
+            setCards(createCards(...cards));
           }
         }}
       >
