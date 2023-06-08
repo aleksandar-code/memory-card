@@ -29,4 +29,10 @@ header > div {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.2);
 }

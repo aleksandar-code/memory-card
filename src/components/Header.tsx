@@ -1,4 +1,4 @@
-export function Header() {
+export function Header({ bestScore, currentScore }) {
   return (
     <>
       <header>
@@ -9,13 +9,9 @@ export function Header() {
             once!
           </p>
           <div>
-            <div>
-              Current Score: <span>0</span>
-            </div>
+            <div>Current Score: {currentScore}</div>
 
-            <div>
-              Best Score: <span>7</span>
-            </div>
+            <div>Best Score: {bestScore}</div>
           </div>
         </div>
       </header>
