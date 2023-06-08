@@ -1,9 +1,18 @@
-import { Card } from "./Card";
-
-export function Cards() {
+export function Cards({ cards, setCards }) {
   return (
     <>
-      <Card></Card>
+      <div className="cards">
+        {cards.map((card: number) => {
+          return (
+            <div
+              key={card}
+              className="card"
+            >
+              {card}
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 }
