@@ -41,3 +41,17 @@ header > div {
 .card:hover {
   transform: scale(1.2);
 }
+
+.best-score,
+.current-score {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.instructions {
+  font-size: 1.3rem;
+  font-weight: 900;
+  font-style: italic;
+  background-color: black;
+  color: white;
+}

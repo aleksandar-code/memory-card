@@ -4,7 +4,7 @@ export function Header({ bestScore, currentScore }) {
       <header>
         <h1>Memory Game</h1>
         <div>
-          <p>
+          <p className="instructions">
             Get points by clicking on an image but don't click anymore than
             once!
           </p>
