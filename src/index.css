@@ -20,3 +20,13 @@ header > div {
   align-items: center;
   justify-content: space-around;
 }
+
+.card {
+  font-size: 5rem;
+  height: 150px;
+  width: 150px;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
